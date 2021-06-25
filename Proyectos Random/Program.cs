@@ -63,8 +63,9 @@ namespace Proyectos_Random
                         Console.WriteLine("Comando incorrecto, intentelo de nuevo.");
                         Introducir();
                         break;
+                
                 }
-
+                Console.WriteLine("si");
             }
 
         }
