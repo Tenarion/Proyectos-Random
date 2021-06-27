@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proyectos_Random
 {
-
-    class Program
+    internal class Program
     {
         public static void Main1()
         {
-
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("==============================");
             Console.WriteLine("       COMMAND MANAGER");
@@ -31,8 +27,8 @@ namespace Proyectos_Random
                 Console.WriteLine("{0}", string.Concat(Enumerable.Repeat("-", length)));
             }
             Introducir();
-
         }
+
         public static void Introducir()
         {
             Color.VerfCol();
@@ -50,24 +46,25 @@ namespace Proyectos_Random
                     case "/roll":
                         Roll.Comando1();
                         break;
+
                     case "/color":
                         Color.Comando1();
                         break;
+
                     case "/hour":
                         Hour.Comando1();
                         break;
+
                     case "/search":
                         Search.Comando1();
                         break;
+
                     default:
                         Console.WriteLine("Comando incorrecto, intentelo de nuevo.");
                         Introducir();
                         break;
-                
                 }
-                Console.WriteLine("si");
             }
-
         }
     }
 }

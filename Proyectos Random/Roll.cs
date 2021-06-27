@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proyectos_Random
 {
-    class Roll
+    internal class Roll
     {
         public static void Comando1()
         {
-            Console.Write("Introduce X: ");  
+            Console.Write("Introduce X: ");
             int.TryParse(Console.ReadLine(), out int v1);
             Console.Write("Introduce Y: ");
             int.TryParse(Console.ReadLine(), out int v2);
@@ -33,7 +29,8 @@ namespace Proyectos_Random
                 YN();
             }
         }
-        static void YN()
+
+        private static void YN()
         {
             Console.Write("Seguir? (Y/N): ");
             string yn = Console.ReadLine();
@@ -48,7 +45,7 @@ namespace Proyectos_Random
             }
             else
             {
-               YN();
+                YN();
             }
         }
     }

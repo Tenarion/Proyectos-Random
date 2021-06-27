@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proyectos_Random
 {
-    class Color
+    internal class Color
     {
         public static string intr1 = "6";
         public static string intr2 = "14";
+
         public static void Comando1()
         {
             Console.WriteLine("Que desea cambiar?");
@@ -27,9 +24,9 @@ namespace Proyectos_Random
             {
                 Comando1();
             }
-
         }
-        static void Fuente()
+
+        private static void Fuente()
         {
             Console.WriteLine("Introduce el número: ");
             Console.WriteLine("1-Rojo", Console.ForegroundColor = ConsoleColor.Red);
@@ -55,73 +52,90 @@ namespace Proyectos_Random
                     Console.ForegroundColor = ConsoleColor.Red;
                     YN();
                     break;
+
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Green;
                     YN();
                     break;
+
                 case "3":
                     Console.ForegroundColor = ConsoleColor.Blue;
                     YN();
                     break;
+
                 case "4":
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     YN();
                     break;
+
                 case "5":
                     Console.ForegroundColor = ConsoleColor.Magenta;
                     YN();
                     break;
+
                 case "6":
                     Console.ForegroundColor = ConsoleColor.White;
                     YN();
                     break;
+
                 case "7":
                     Console.ForegroundColor = ConsoleColor.Gray;
                     YN();
                     break;
+
                 case "8":
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     YN();
                     break;
+
                 case "9":
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     YN();
                     break;
+
                 case "10":
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
                     YN();
                     break;
+
                 case "11":
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
                     YN();
                     break;
+
                 case "12":
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     YN();
                     break;
+
                 case "13":
                     Console.ForegroundColor = ConsoleColor.DarkMagenta;
                     YN();
                     break;
+
                 case "14":
                     Console.ForegroundColor = ConsoleColor.Black;
                     YN();
                     break;
+
                 case "15":
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     YN();
                     break;
+
                 case "16":
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
                     YN();
                     break;
+
                 default:
                     Console.WriteLine("Introduce un color correcto.");
                     Fuente();
                     break;
             }
         }
-        static void Fondo()
+
+        private static void Fondo()
         {
             Console.WriteLine("Introduce el número: (Los cambios surgirán efecto completo una vez vuelvas al menú principal. ");
             Console.WriteLine("1-Rojo", Console.ForegroundColor = ConsoleColor.Red);
@@ -145,65 +159,80 @@ namespace Proyectos_Random
             {
                 case "1":
                     Console.BackgroundColor = ConsoleColor.Red;
-                    YN();   
-                    break;  
-                case "2":   
+                    YN();
+                    break;
+
+                case "2":
                     Console.BackgroundColor = ConsoleColor.Green;
-                    YN();   
-                    break;  
-                case "3":   
+                    YN();
+                    break;
+
+                case "3":
                     Console.BackgroundColor = ConsoleColor.Blue;
-                    YN();   
-                    break;  
-                case "4":   
+                    YN();
+                    break;
+
+                case "4":
                     Console.BackgroundColor = ConsoleColor.Yellow;
-                    YN();   
-                    break;  
-                case "5":   
+                    YN();
+                    break;
+
+                case "5":
                     Console.BackgroundColor = ConsoleColor.Magenta;
-                    YN();   
-                    break;  
-                case "6":   
+                    YN();
+                    break;
+
+                case "6":
                     Console.BackgroundColor = ConsoleColor.White;
-                    YN();   
-                    break;  
-                case "7":   
+                    YN();
+                    break;
+
+                case "7":
                     Console.BackgroundColor = ConsoleColor.Gray;
-                    YN();   
-                    break;  
-                case "8":   
+                    YN();
+                    break;
+
+                case "8":
                     Console.BackgroundColor = ConsoleColor.Cyan;
-                    YN();   
-                    break;  
-                case "9":   
+                    YN();
+                    break;
+
+                case "9":
                     Console.BackgroundColor = ConsoleColor.DarkRed;
-                    YN();   
-                    break;  
-                case "10":  
+                    YN();
+                    break;
+
+                case "10":
                     Console.BackgroundColor = ConsoleColor.DarkGreen;
-                    YN();   
-                    break;  
-                case "11":  
+                    YN();
+                    break;
+
+                case "11":
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
-                    YN();   
-                    break;  
-                case "12":  
+                    YN();
+                    break;
+
+                case "12":
                     Console.BackgroundColor = ConsoleColor.DarkYellow;
-                    YN();   
-                    break;  
-                case "13":  
+                    YN();
+                    break;
+
+                case "13":
                     Console.BackgroundColor = ConsoleColor.DarkMagenta;
-                    YN();   
-                    break;  
-                case "14":  
+                    YN();
+                    break;
+
+                case "14":
                     Console.BackgroundColor = ConsoleColor.Black;
-                    YN();   
-                    break;  
-                case "15":  
+                    YN();
+                    break;
+
+                case "15":
                     Console.BackgroundColor = ConsoleColor.DarkGray;
-                    YN();   
-                    break;  
-                case "16":  
+                    YN();
+                    break;
+
+                case "16":
                     Console.BackgroundColor = ConsoleColor.DarkCyan;
                     YN();
                     break;
@@ -214,7 +243,8 @@ namespace Proyectos_Random
                     break;
             }
         }
-        static void YN()
+
+        private static void YN()
         {
             Console.Write("Seguir? (Y/N): ");
             string yn = Console.ReadLine();
@@ -232,11 +262,12 @@ namespace Proyectos_Random
                 YN();
             }
         }
+
         public static void VerfCol()
         {
             if (intr1 == "6" && intr2 == "6")
             {
-                Console.ForegroundColor = ConsoleColor.Black;          
+                Console.ForegroundColor = ConsoleColor.Black;
             }
             else if (intr1 == "14" && intr2 == "14")
             {
@@ -249,54 +280,70 @@ namespace Proyectos_Random
                     case "1":
                         Console.ForegroundColor = ConsoleColor.Red;
                         break;
+
                     case "2":
                         Console.ForegroundColor = ConsoleColor.Green;
                         break;
+
                     case "3":
                         Console.ForegroundColor = ConsoleColor.Blue;
                         break;
+
                     case "4":
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         break;
+
                     case "5":
                         Console.ForegroundColor = ConsoleColor.Magenta;
                         break;
+
                     case "6":
                         Console.ForegroundColor = ConsoleColor.White;
                         break;
+
                     case "7":
                         Console.ForegroundColor = ConsoleColor.Gray;
                         break;
+
                     case "8":
                         Console.ForegroundColor = ConsoleColor.Cyan;
                         break;
+
                     case "9":
                         Console.ForegroundColor = ConsoleColor.DarkRed;
                         break;
+
                     case "10":
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         break;
+
                     case "11":
                         Console.ForegroundColor = ConsoleColor.DarkBlue;
                         break;
+
                     case "12":
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
                         break;
+
                     case "13":
                         Console.ForegroundColor = ConsoleColor.DarkMagenta;
                         break;
+
                     case "14":
                         Console.ForegroundColor = ConsoleColor.Black;
                         break;
+
                     case "15":
                         Console.ForegroundColor = ConsoleColor.DarkGray;
                         break;
+
                     case "16":
                         Console.ForegroundColor = ConsoleColor.DarkCyan;
                         break;
                 }
             }
         }
+
         public static void VerfFond()
         {
             switch (intr2)
@@ -304,15 +351,15 @@ namespace Proyectos_Random
                 case "6":
                     Console.ForegroundColor = ConsoleColor.Black;
                     break;
+
                 case "14":
                     Console.ForegroundColor = ConsoleColor.White;
                     break;
+
                 default:
                     Console.ForegroundColor = ConsoleColor.White;
                     break;
-               
             }
         }
     }
-
 }
