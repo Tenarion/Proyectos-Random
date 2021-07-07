@@ -126,8 +126,6 @@ namespace Calculadora
         private void onClickColor(object sender, EventArgs e)
         {
         }
-
-        
         }
     }                                
                       
