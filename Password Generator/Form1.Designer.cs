@@ -30,6 +30,7 @@ namespace Password_Generator
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.title = new System.Windows.Forms.Label();
             this.lengthPass = new System.Windows.Forms.NumericUpDown();
             this.tpasslength = new System.Windows.Forms.Label();
@@ -269,6 +270,7 @@ namespace Password_Generator
             this.Controls.Add(this.generatedPass);
             this.Controls.Add(this.checkHide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
